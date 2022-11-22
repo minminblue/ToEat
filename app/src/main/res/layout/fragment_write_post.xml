@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WritePostFragment" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/noWrite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/page_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:text="커뮤니티 글 작성하기"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/postWriter"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="작성자"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/postContents"
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="내용"
+        android:inputType="textMultiLine"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/postUpload"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="확인"
+        android:textSize="20dp"
+        android:backgroundTint="#FFB200"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>
